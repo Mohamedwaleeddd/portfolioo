@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+  <title>HTML</title>
+  <script src="jq.js"></script>
+  <script>
+$(document).ready(function() {
+  $("#show").click(function() {
+    $("#sb").fadeIn(10);
+  });
+  $("#h").click(function() {
+    $("#sb").fadeOut(10);
+  });
+  $("select").change(function() {
+  var selectedOption = $(this).children("option:selected").val();
+  if (selectedOption === "2") {
+    window.location.href = "index.html";
+  }
+});
+});
+      </script>
+      <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+  <div onclick="sb()" id="show" style="cursor:pointer;margin-left:20px;">
+    <ul>
+      <div class="line1" style="border-bottom:4px #7700ff solid;width:27px;border-radius:1px;"></div>
+
+      <div class="line2"></div>
+
+      <div class="line3" style="border-bottom:4px #7700ff solid;width:27px;margin-top: 5px;border-radius:1px"></div>
+    </ul>
+  </div>
+  <br>
+   <select name="" id="select">
+     <option value="1">العربية</option>
+     <option value="2">English</option>
+   </select>
+  </header>
+<br>
+<div align="center" class="sb" id="sb">
+  <br><br><br><br>
+  <h1 id="h" style="cursor:pointer;color:#7700ff;left: 12px;position:absolute;font-weight: 700" onclick="d()">x</h1>
+  <br><br>
+  <br>
+    <ul>
+    <img src="logo.jpg"><br>
+    <br>
+    <a class="hover-underline-animation" href="#">
+      الرئيسية
+      </a><br>
+      <br>
+      <a class="hover-underline-animation" href="#about">
+        نبذة عني
+        </a><br><br>
+    <a class="hover-underline-animation" href="#skills">
+      مهاراتي
+    </a><br><br>
+    <a class="hover-underline-animation" href="#s">الخدمات</a><br><br>
+   <a class="hover-underline-animation" href="#projects">
+     المشاريع
+   </a><br><br>
+   <a class="hover-underline-animation" href="contact.html">
+     تواصل معي
+     </a><br><br>
+    
+  </ul>
+  <br>
+  <br>
+</div>
+  <nav class="nav">
+    <h2><span>M</span>ohamed Waleed</h2>
+       <br>
+      <a class="hover-underline-animation" href="#">
+      الرئيسية
+      </a><br>
+      <br>
+      <a class="hover-underline-animation" href="#about">
+        نبذة عني
+        </a>
+    <a class="hover-underline-animation" href="#skills">
+    مهاراتي
+    </a>
+    <a href="hover-underline-animation" href="#s">
+      الخدمات
+    </a>
+   <a class="hover-underline-animation" href="#projects">
+     مشاريعي
+   </a>
+   <a class="hover-underline-animation" href="contact.html">
+     تواصلي معي
+     </a>
+    <br><br>
+   <select name="" id="select">
+     <option value="1">العربية</option>
+     <option value="2">ENGLISH</option>
+   </select><br>
+  </nav>
+  <div class="landing">
+      <ul align="center">
+        <br><br>
+    <h3>اهلاً انا اسمي</h3>
+    <div class="container">
+        <span class="text first-text"></span>
+        <span class="text sec-text">محمد وليد</span>
+        <h3>انا مطور مواقع فرونت اند</h3>
+    </div>
+    <a id="a" href="contact.html"><button class="button-76" role="button">تواصل معي</button></a>
+      </ul>
+    <img src="l.png" style="width: 350px;margin-top:0px;">
+  </div>
+  <br><br><br>
+  <h1 id="about" align="center"><span style="font-size:40px;">نبذة عني</span></h1>
+  <center><br>
+  <div class="about">
+    <img src="about.jpg" width="370px"><br><br>
+      <h4>مرحباً ، اسمي محمد وليد ، أنا مطور مواقع فرونت اند. تعلمت html و css و javascript و jquery و bootstrap و vue.js. أعيش في مدينة العبور ، القليوبية ، مصر. عمري ١٢ عام</h4><br><br>
+      <div class="info">
+        <h3 class="h33">العمر:<span> ١٢ عام</span></h3>
+        <br>
+        <h3 class="h33">الخبرة: <span>عام واحد </span></h3>
+        <br>
+        <h3 class="h33">: المهارات <br><span>Html, Css, Js, Jquery, Bootstrap, Vue.js</span></h3><br>
+      </div>
+    </div>
+  </center>
+  <br><br>
+<h1 id="skills" align="center"><span style="font-size:40px;">مهاراتي</span></h1>
+<br><br>
+<div class="html-css">
+  <div class="progresss">
+    <div class="progress-container">
+      <svg class="progress-svg" viewBox="0 0 100 100">
+        <circle class="progress-background" cx="50" cy="50" r="45" />
+        <circle class="progress-bar" cx="50" cy="50" r="45" />
+        <text class="progress-text" x="50" y="50">HTML</text>
+      </svg>
+      <div class="progress-container">
+        <svg class="progress-svg" viewBox="0 0 100 100">
+          <circle class="progress-background" cx="50" cy="50" r="45" />
+          <circle class="progress-bar" cx="50" cy="50" r="45" id="css" />
+          <text class="progress-text" x="50" y="50">CSS</text>
+        </svg>
+      </div>
+      <div class="progress-container">
+        <svg class="progress-svg" viewBox="0 0 100 100">
+          <circle class="progress-background" cx="50" cy="50" r="45" />
+          <circle id="js" class="progress-bar" cx="50" cy="50" r="45" />
+          <text class="progress-text" x="50" y="50">JS</text>
+        </svg>
+
+        <div class="progress-container">
+          <svg class="progress-svg" viewBox="0 0 100 100">
+            <circle class="progress-background" cx="50" cy="50" r="45" />
+            <circle id="jq" class="progress-bar" cx="50" cy="50" r="45" />
+            <text class="progress-text" x="50" y="50" style="font-size:12px">BOOTSTRAP
+            </text>
+          </svg>
+        </div>
+        <div class="progress-container">
+          <svg class="progress-svg" viewBox="0 0 100 100">
+            <circle class="progress-background" cx="50" cy="50" r="45" />
+            <circle id="jq" class="progress-bar" cx="50" cy="50" r="45" />
+            <text class="progress-text" x="50" y="50" style="font-size: 20px">JQUERY</text>
+          </svg>
+          <div class="progress-container">
+            <svg class="progress-svg" viewBox="0 0 100 100">
+              <circle class="progress-background" cx="50" cy="50" r="45" />
+              <circle id="vue" class="progress-bar" cx="50" cy="50" r="45" />
+              <text class="progress-text" x="50" y="50">VUE.JS</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+ <h1 id="s" align="center"><span style="font-size:40px;">الخدمات</span></h1>
+  <div class="s">
+    <div align="center" class="cardd">
+      <br>
+     
+    <svg xmlns="http://www.w3.org/2000/svg" height="120px" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+      <br><br>
+      <h3>مطور مواقع</h3>
+    </div>
+    <div align="center" class="cardd"><br>
+    <svg xmlns="http://www.w3.org/2000/svg" height="120px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 32c0-17.7-14.3-32-32-32S64 14.3 64 32V64H32C14.3 64 0 78.3 0 96s14.3 32 32 32H64V384c0 35.3 28.7 64 64 64H352V384H128V32zM384 480c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H448l0-256c0-35.3-28.7-64-64-64L160 64v64l224 0 0 352z"/></svg>
+    <br><br>
+      <h3>جرافيك ديزاينر</h3>
+    </div>
+  </div>
+  <br><br>
+ <!-- projects -->
+  
+  <h1 id="projects" align="center"><span style="font-size:40px;">المشاريع</span></h1>
+   <div id="p" class="p">
+         <center>
+   <div class="slideshow-container">
+
+   <div class="mySlides fade">
+  <div class="card">
+    <br><br><br>
+    <img src="3-devices-black.png" align="center"><br><br>
+    <p>mw-tools website</p>
+    <a href="https://mohamedwaleeddd.github.io/mw-tools"><button>Open</button>
+  </div></a>
+   </div>
+   <div class="mySlides fade">
+  
+    <div class="card">
+       <br><br><br>
+       <img src="3-devices-black 1.png" align="center"><br><br>
+       <p>Education website</p>
+       <a href="https://codecrafters5.github.io/E-learning/"><button>Open</button>
+     </div></a>
+        </div>
+     
+    <div class="mySlides fade">
+<div class="card">
+       <br><br><br>
+    <img src="3-devices-black2.png" alt=""><br><br>
+    <p>Eslamic Website</p>
+    <a href="https://mohamedwaleeddd.github.io/Muslim"><button>Open</button></a>
+     </div>
+        </div>
+      <div class="mySlides fade">
+     <div class="card">
+       <br><br><br>
+       <img src="3-devices-black3.png" alt=""><br><br>
+       <p>books website</p>
+       <a href="https://mohamedwaleeddd.github.io/Ktaby/"><button>Open</button>
+     </div></a>   
+        </div>
+     <div style="display:flex;align-items:center;justify-content:space-between;">
+        <a id="a" class="prev" style="font-size:16px;color: #7700ff;" onclick="plusSlides(-1)">❮</a>
+        <a id="a" class="next" style="
+        font-size:15px;margin-left:100px;color: #7700ff;" onclick="plusSlides(1)">❯</a>
+     </div>
+      </div><br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div><br>
+   </div>
+   <br><br>
+    <button id="arrow-up"><center id="arr"><<</button></div>
+    <center style="background:black;height:170px;width: 100%;" id="footer"><br>
+      <h4 class="h4">copyright by <span>Mohamed Waleed</span> ©️ in 2023.</h4><br>
+    </center>
+   <script>
+   let progresss = document.querySelector('.progresss');
+function sb() {
+  document.querySelector('.sb').style.left = "0px";
+}
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 1000) {
+    progresss.style.display = "block";
+  }
+});
+
+function d() {
+  document.querySelector('.sb').style.left = "-100%";
+}
+const arrowUp = document.getElementById("arrow-up");
+
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    arrowUp.style.display = "block";
+  } else {
+    arrowUp.style.display = "none";
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 1000) {
+    document.querySelector('#skills').style.opacity = "1";
+  }
+});
+arrowUp.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+   </script>
+</body>
+</html>
