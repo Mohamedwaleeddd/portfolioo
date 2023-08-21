@@ -636,14 +636,12 @@ textarea{
   background-image: linear-gradient(to bottom right, darkviolet, blueviolet, #7700ff);
   border: 0;
   color: #fff;
-  border-radius: .25rem;
-  width: 100px;
+  border-radius: 5px;
+  width: 120px;
   box-sizing: border-box;
-  
   cursor: pointer;
-  font-size: 14px; /* 18px */
+  font-size: 14px;
   font-weight: 600;
-  line-height: 0.75rem; /* 28px */
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
@@ -712,4 +710,4 @@ svg:hover {
 }
 .h4{
   color: #fff;
-}
+			     }
